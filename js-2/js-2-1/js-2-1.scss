@@ -1,0 +1,238 @@
+@charset "utf-8";
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font: 62.5% HiraginoSansGB-W3, Serif;
+  background-color: #F0F0F0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+main p, footer p {
+  white-space: nowrap; /*不换行*/
+  text-overflow: ellipsis; /*文字隐藏时出现省略号*/
+  overflow-x: hidden; /*修剪内容*/
+}
+
+button, input {
+  background: none;
+  border: none;
+  outline: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+body {
+  display: flex;
+  @extend html;
+  overflow: hidden;
+}
+
+@mixin w-h($w,$h) {
+  width: $w;
+  height: $h;
+}
+
+.box-main {
+  min-width: 100%;
+}
+
+.list-left {
+  position: relative;
+  display: none;
+  min-width: 60%;
+  background-color: #fff;
+}
+
+.left-word {
+  font-size: 2rem;
+  color: #29BDE0;
+  margin: 1.5rem 5rem;
+}
+
+.list-left-1 {
+  border-bottom: 1px solid #9A9A9A;
+
+  &:before {
+    position: absolute;
+    @include w-h(2rem, 2rem);
+    content: "";
+    border-top: 3.5px solid #29BDE0;
+    border-right: 3.5px solid #29BDE0;
+    transform: rotate(45deg);
+    right: 3rem;
+  }
+}
+
+.btn-page:checked + .list-left {
+  display: block;
+}
+
+.btn-page:checked {
+  left: 62%;
+}
+
+header {
+  @include w-h(100%, 4.4rem);
+  background-color: #29BDE0;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+main {
+  height: 5.8rem;
+  margin: 1.4rem 1.8rem;
+}
+
+.history {
+  position: relative;
+  height: 5.8rem;
+  background-color: #FFFFFF;
+  border: 1px solid #C9C9C9;
+}
+
+.btn-page {
+  position: absolute;
+  @include w-h(1.7rem, 1.4rem);
+  top: 2rem;
+  left: 1.1rem;
+  padding: 0;
+  margin: 0;
+  background: url("img.png") no-repeat -6rem 0;
+  background-size: 36.3rem 10.3rem;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.word-up {
+  line-height: 5.8rem;
+  font-size: 1.7rem;
+  color: #9A9A9A;
+  text-align: center;
+}
+
+.icon-1 {
+  @include w-h(3rem, 1.4rem);
+  position: absolute;
+  top: 1.9rem;
+  box-sizing: border-box;
+  right: .5rem;
+}
+
+.arrow {
+  @include w-h(2rem, 2rem);
+  border-top: 3.5px solid #E7E7E7;
+  border-right: 3.5px solid #E7E7E7;
+  transform: rotate(45deg);
+}
+
+@mixin flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin: 0 1.8rem 3.1rem;
+  background-color: #FFFFFFFF;
+  border: 1px solid #C9C9C9;
+  @include flex-col;
+}
+
+.item {
+  background-color: #FFFFFFFF;
+  padding-left: 2.7rem;
+  padding-right: 2.5rem;
+  @include flex-col;
+}
+
+.item-1 {
+  margin: 0;
+  padding: 0;
+  @include flex-col;
+}
+
+.btn-1 {
+  position: relative;
+  margin: 1.5rem 0 1.3rem 0;
+  background-color: #69D1E9;
+  padding: 0;
+  height: 6.7rem;
+}
+
+/*第一行按钮*/
+
+.arrow-1 {
+  position: absolute;
+  @include w-h(1.4rem, 2.8rem);
+  right: -2.2rem;
+  top: 50%;
+  margin-top: -1.4rem;
+}
+
+.icon-2 {
+  @include w-h(0, 0);
+  border-top: 14px solid transparent;
+  border-right: 14px solid transparent;
+  border-bottom: 14px solid transparent;
+  border-left: 14px solid #FBB435;
+}
+
+//正文三角符号位置
+
+.content-1 {
+  height: 4.5rem;
+  border-bottom: 1px solid #FBB435;
+  text-align: center;
+}
+
+.word-1 {
+  font-size: 1.9rem;
+  line-height: 4.5rem;
+  color: #FBB435;
+}
+
+.word-2 {
+  font-size: 1.6rem;
+  color: #FFFFFF; /*国服日服*/
+  text-align: center;
+  line-height: 6.7rem;
+}
+
+.word-3 {
+  font-size: 1.2rem;
+  color: #787878;
+  text-align: center;
+}
+
+.point {
+  height: 0.8rem;
+  margin: 0.7rem auto;
+  overflow-x: hidden;
+  display: flex;
+}
+
+.point-1, .point-2 {
+  @include w-h(.8rem, .8rem);
+  background: #69D1E9;
+  border-radius: 50%;
+}
+
+footer .point-2 {
+  background: #F0F0F0;
+  margin-left: 0.5rem;
+}
+

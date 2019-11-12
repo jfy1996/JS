@@ -1,0 +1,34 @@
+@charset "UTF-8";
+html, body {
+  font-size: 62.5%;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  font-family: HiraginoSansGB W3, serif; }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 4.4rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+  box-sizing: border-box;
+  background-color: #29BDE0; }
+  nav .back {
+    width: 1.3rem;
+    height: 2.2rem;
+    background: url("img/矩形 7 拷贝 3.png") no-repeat;
+    background-size: cover;
+    margin-top: 1.35rem;
+    margin-left: 1.2rem; }
+  nav p {
+    font-size: 1.7rem;
+    color: #fff;
+    margin-top: 1.65rem; }
+  nav .close {
+    width: 1.8rem;
+    height: 1.8rem;
+    background: url("img/矩形 10 拷贝.png") no-repeat;
+    background-size: cover;
+    margin-top: 1.85rem;
+    margin-right: .85rem; }
+
+/*# sourceMappingURL=common.css.map */
