@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge chrome=1">
+    <link rel="stylesheet" href="../css/reset.css" type="text/css">
+    <link rel="stylesheet" href="../css/common.css" type="text/css">
+    <link rel="stylesheet" href="../css/js-2-2.css" type="text/css">
+    <title>设置页面</title>
+</head>
+<body>
+<nav>
+    <button class="box-back" type="button"></button>
+    <p>参数设置</p>
+    <button class="pic-help" type="button"></button>
+</nav>
+
+<header>
+    <div class="box-header">
+        <div class="box-player-ratio">
+            <p class="word-player">玩家配比</p>
+        </div>
+        <div class="box-player-main">
+            <div class="box-player">
+                <div class="box-player-num">
+                    <div class="box-player-people">
+                        <div class="box-color-1"></div>
+                        <p>杀&nbsp;&nbsp;&nbsp;&nbsp;手&nbsp;&nbsp;<span id="killer">0</span>&nbsp;&nbsp;人</p>
+                    </div>
+                    <div class="box-player-people">
+                        <div class="box-color-2"></div>
+                        <p>水&nbsp;&nbsp;&nbsp;&nbsp;民&nbsp;&nbsp;<span id="waterPeople">0</span>&nbsp;&nbsp;人</p>
+                    </div>
+                </div>
+            </div>
+            <div class="set">
+                <div class="set-word">
+                    <p>点击设置</p>
+                    <div class="set-pic"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="box-main">
+        <div class="box-water">
+            <label for="water"></label>
+            <input class="word-people" id="water" type="text" value placeholder="水民词组">
+        </div>
+    </div>
+    <div class="box-main">
+        <div class="box-water">
+            <label for="ghost"></label>
+            <input class="word-people" id="ghost" type="text" value placeholder="幽灵词组">
+        </div>
+    </div>
+
+    <div class="box-change-num">
+        <div class="word-change">
+            <p>玩家人数</p>
+            <label>
+                <input class="people-num" id="inputNumber" oninput="equalNumber()" type="text">
+            </label>
+            <p>人</p>
+        </div>
+        <div class="box-move">
+            <input class="reduce" type="button">
+            <label class="middle-box" for="rangeNumber">
+                <input id="rangeNumber" type="range" oninput="move()" value="4" min="4" max="18" step="1">
+            </label>
+            <input class="plus" type="button">
+        </div>
+    </div>
+</main>
+
+<footer>
+    <input class="btn-licensing" type="submit" value="去发牌">
+</footer>
+<script src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
+<script src="../js/js-2-2.js"></script>
+</body>
+</html>

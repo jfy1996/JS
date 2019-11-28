@@ -1,0 +1,44 @@
+@charset "utf-8";
+html, body {
+  font-size: 62.5%;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent; //清除移动端点击后的颜色
+  font-family: HiraginoSansGB W3, serif;
+}
+
+@mixin w-h($w:0,$h:0) {
+  width: $w;
+  height: $h;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 4.4rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+  box-sizing: border-box;
+  background-color: #29BDE0;
+
+  .back {
+    @include w-h(1.3rem, 2.2rem);
+    background: url("../img/img.png") no-repeat -.7rem 0;
+    background-size: 73.7rem,15.1rem;
+    margin-top: 1.35rem;
+    margin-left: 1.2rem;
+
+  }
+
+  p {
+    font-size: 1.7rem;
+    color: #fff;
+    margin-top: 1.65rem;
+  }
+
+  .close {
+    @include w-h(1.8rem, 1.8rem);
+    background: url("../img/img.png") no-repeat -12.3rem 0;
+    background-size: 73.7rem,15.1rem;
+    margin-top: 1.85rem;
+    margin-right: .85rem;
+  }
+}

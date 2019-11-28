@@ -1,0 +1,71 @@
+html, body {
+  font-size: 62.5%;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  background-color: #29BDE0;
+  font-family: HiraginoSansGB W3, serif; }
+
+main {
+  padding: 0 4.4rem; }
+  main .main-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFEDC5;
+    border: 3px solid #fff;
+    height: 33.9rem;
+    box-sizing: border-box;
+    margin-top: 4.2rem; }
+    main .main-box .main-num {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 3.4rem;
+      height: 3.4rem;
+      margin-left: -1.7rem;
+      margin-top: -1.7rem;
+      border-radius: 50%;
+      background-color: #fff;
+      border: .15rem solid #FFEDC5;
+      font-size: 2rem;
+      color: #F56B81; }
+    main .main-box .main-pic {
+      width: 15.1rem;
+      height: 15.1rem;
+      background: url("../img/img.png") no-repeat -41rem 0;
+      background-size: 73.7rem, 15.1rem; }
+    main .main-box .main-pic-2 {
+      position: absolute;
+      display: none; }
+      main .main-box .main-pic-2 div {
+        width: 11.1rem;
+        height: 11.1rem;
+        background: url("../img/img.png") no-repeat -29.9rem 0;
+        background-size: 73.7rem, 15.1rem; }
+      main .main-box .main-pic-2 p {
+        margin-top: 1.9rem;
+        font-size: 2rem;
+        text-align: center;
+        color: #29BDE0; }
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 3rem;
+  width: 100%;
+  padding: 0 3.8rem;
+  box-sizing: border-box; }
+  footer .view-identity {
+    width: 100%;
+    padding-top: .65rem;
+    padding-bottom: .85rem;
+    border-radius: .5rem;
+    color: #fff;
+    font-size: 2rem;
+    background-color: #FBB435; }
+
+/*# sourceMappingURL=js-2-3.css.map */

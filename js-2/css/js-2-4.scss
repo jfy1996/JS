@@ -1,0 +1,75 @@
+@charset "utf-8";
+html, body {
+  font-size: 62.5%;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent; //清除移动端点击后的颜色
+  background-color: #29BDE0;
+  font-family: HiraginoSansGB W3, serif;
+}
+
+@mixin w-h($w:0,$h:0) {
+  width: $w;
+  height: $h;
+}
+
+header {
+  margin-right: -1.8rem;
+  margin-bottom: 10rem;
+  display: flex;
+  flex-wrap: wrap; //换行
+  width: 100%;
+
+  .box-up {
+    @include w-h(27.3vw, 27.3vw);
+    margin: 1.8rem 3vw 0;
+    border: .3rem solid #fff;
+    box-sizing: border-box;
+
+    .word {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 79%;
+      font-size: 1.5rem;
+      color: #565656;
+      background-color: #F5C97B;
+    }
+
+    .number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 21%;
+
+      font-size: 1.1rem;
+      color: #fff;
+      background-color: #83b09a;
+    }
+  }
+}
+
+main {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: #29BDE0;
+  z-index: 1;
+
+  div {
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    border-top: 1px solid #fff;
+
+    button {
+      width: 100%;
+      margin-top: 2.1rem;
+      margin-bottom: 2.1rem;
+      padding: 1.3rem 0;
+      border-radius: .5rem;
+      font-size: 2rem;
+      color: #fff;
+      background-color: #FBB435;
+    }
+  }
+}
