@@ -1,0 +1,26 @@
+html, body {
+  font-size: 62.5%;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent; }
+
+ul li {
+  background-color: #eb9316;
+  width: 31.3%;
+  padding-top: 31.3%;
+  float: left;
+  margin: 1%;
+  border-radius: 15px;
+  }
+
+button {
+  width: 100vw;
+  font-size: 2rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid #eb9316; }
+  button:hover {
+    background-color: #eea236;
+    color: #fff; }
+
+/*# sourceMappingURL=js-1.css.map */
